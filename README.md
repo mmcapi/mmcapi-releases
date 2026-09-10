@@ -12,6 +12,17 @@
 
 ---
 
+## 平台与下载
+
+**MMCAPI 提供 Windows 和 macOS 版本。** 当前已发布的安装包如下（2026 年 9 月 10 日核对）：
+
+| 操作系统 | 适用设备 | 可用版本 | 安装包 |
+| --- | --- | --- | --- |
+| Windows | x64（Intel / AMD 64 位） | v1.0.6 | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.6/mmcapi-v1.0.6-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.6/mmcapi-v1.0.6-Windows.msi) |
+| macOS | Apple Silicon / Intel Mac | v1.0.6 | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.6/mmcapi-v1.0.6-macOS.dmg) |
+
+平台版本可能分批发布。本表列出各平台已提供的版本；查看后续版本请前往 [Release 发布列表](https://github.com/mmcapi/mmcapi-releases/releases)，以对应版本的平台说明及附件为准。
+
 ## MMCAPI 是什么？
 
 MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理工具。无论你只有一个 API 供应商，还是需要在多个供应商之间切换，都可以在同一个界面管理配置、查看使用趋势，并通过实际生成任务观察模型的输出表现。
@@ -62,7 +73,7 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 前往 **[最新版本下载页](https://github.com/mmcapi/mmcapi-releases/releases/latest)**，展开页面下方的 **Assets（附件）**，按你的操作系统选择安装包。
 
 - **Windows x64**：推荐下载以 `Windows-x64-setup.exe` 结尾的安装程序；需要 MSI 格式时，选择 `Windows.msi`。
-- **macOS**：请在 [历史发布列表](https://github.com/mmcapi/mmcapi-releases/releases) 中选择含 macOS 附件的版本。不同平台的发布进度可能不同，以每版附件和更新说明为准。
+- **macOS（Apple Silicon / Intel）**：下载 `macOS.dmg`，打开后将 MMCAPI 拖入“应用程序”文件夹。上方下载表提供已发布版本的直接入口。
 - `.sig`、`latest.json` 和 `SHA256SUMS.txt` 是更新签名、更新清单及校验文件，无需手动安装。
 
 已有旧版的 Windows 用户，建议保存工作并退出应用，再运行新安装包。安装器沿用旧版升级迁移流程；重要配置和历史会话建议提前备份。
@@ -82,6 +93,8 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 应用内打开 **设置 → 通用 → 版本更新**，检查并按提示下载、安装更新。也可以从本仓库下载对应平台的新安装包进行升级。
 
 每个版本的新增功能、修复内容和平台范围，见 [Release 更新说明](https://github.com/mmcapi/mmcapi-releases/releases)。
+
+**平台发布说明约定**：每次发布注明版本号、已发布平台、CPU 架构及对应安装包；某个平台尚未发布时，明确标为“本次未发布”，并提供该平台上一可用版本入口。补齐平台后同步更新本页下载表和该版 Release 说明。
 
 ## 关于会话同步与恢复
 
