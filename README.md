@@ -19,9 +19,9 @@
 | 操作系统 | 适用设备 | 可用版本 | 安装包 |
 | --- | --- | --- | --- |
 | Windows | x64（Intel / AMD 64 位） | v1.0.7 | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.7/mmcapi-v1.0.7-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.7/mmcapi-v1.0.7-Windows.msi) |
-| macOS | Apple Silicon / Intel Mac | v1.0.6 | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.6/mmcapi-v1.0.6-macOS.dmg) |
+| macOS | Apple Silicon / Intel Mac | v1.0.7 | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.7/mmcapi-v1.0.7-macOS.dmg) |
 
-**本次 Windows x64 已更新至 v1.0.7；macOS 本次未发布 v1.0.7，继续使用上表中的 v1.0.6 通用版。Windows ARM64 本次未发布原生安装包。**
+**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.7，并提供应用内更新。Windows ARM64 本次未发布原生安装包。**
 
 平台版本可能分批发布。本表列出各平台已提供的版本；查看后续版本请前往 [Release 发布列表](https://github.com/mmcapi/mmcapi-releases/releases)，以对应版本的平台说明及附件为准。
 
