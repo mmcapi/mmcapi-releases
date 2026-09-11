@@ -14,6 +14,18 @@
 
 ## 平台与下载
 
+### Windows 1.0.8 预发布（2026 年 9 月 11 日）
+
+已上传图表刷新与官方账号登录相关修复，供手动下载安装验证，**不替换 1.0.7 稳定版，不向稳定客户端推送更新**。
+
+| 平台 | 本次版本 | 安装包 |
+| --- | --- | --- |
+| Windows x64（Intel / AMD 64 位） | **v1.0.8 预发布** | [EXE 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.8/mmcapi-v1.0.8-Windows-x64-setup.exe) · [MSI 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.8/mmcapi-v1.0.8-Windows.msi) |
+| macOS（Apple Silicon / Intel 通用版） | 本次未发布 1.0.8；继续使用 **v1.0.7** | [1.0.7 DMG](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.7/mmcapi-v1.0.7-macOS.dmg) |
+| Windows ARM64 | 本次未发布原生安装包 | — |
+
+[查看 1.0.8 更新说明与已知边界](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.8)。下方为现有稳定版下载入口。
+
 **MMCAPI 提供 Windows 和 macOS 版本。** 当前已发布的安装包如下（2026 年 9 月 11 日核对）：
 
 | 操作系统 | 适用设备 | 可用版本 | 安装包 |
