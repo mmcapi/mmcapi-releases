@@ -14,23 +14,23 @@
 
 ## 平台与下载
 
-### 1.0.8 正式版（Latest，2026 年 9 月 11 日）
+### 1.0.9 正式版（Latest，2026 年 9 月 12 日）
 
-本次发布包含图表刷新与官方账号登录相关修复。**1.0.8 为正式版，标记为 Latest，替代 1.0.7 成为最新稳定版。**
+新增供应商独立自动检测与检测完成时间显示，优化测速结果与余额的布局，并提供真正退出程序的托盘菜单入口。自动检测默认关闭，开启后会产生 API 用量，可按需设置检测间隔。
 
 **MMCAPI 提供 Windows 和 macOS 版本。** 当前版本的安装包如下：
 
 | 操作系统 | 适用设备 | 可用版本 | 安装包 |
 | --- | --- | --- | --- |
-| Windows | x64（Intel / AMD 64 位） | **v1.0.8 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.8/mmcapi-v1.0.8-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.8/mmcapi-v1.0.8-Windows.msi) |
-| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.8 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.8/mmcapi-v1.0.8-macOS.dmg) |
+| Windows | x64（Intel / AMD 64 位） | **v1.0.9 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.9/mmcapi-v1.0.9-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.9/mmcapi-v1.0.9-Windows.msi) |
+| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.9 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.9/mmcapi-v1.0.9-macOS.dmg) |
 | Windows | ARM64 | 本次未发布原生安装包 | — |
 
-**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.8。** Windows 安装包未做商业代码签名。
+**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.9。** Windows 安装包未做商业代码签名。
 
-[查看 1.0.8 更新说明与已知边界](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.8)。
+[查看 1.0.9 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.9)。
 
-平台版本可能分批发布。本表列出各平台已提供的版本；查看后续版本请前往 [Release 发布列表](https://github.com/mmcapi/mmcapi-releases/releases)，以对应版本的平台说明及附件为准。
+平台版本可能分批准备。本表按实际可用包体维护；正式更新清单同时包含 Windows 和 macOS，下载时请以 [Release 附件](https://github.com/mmcapi/mmcapi-releases/releases) 为准。
 
 ## MMCAPI 是什么？
 
@@ -69,6 +69,7 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 | **每家供应商独立图表** | 分别查看请求、缓存和响应时间趋势，观察不同供应商的实际表现。 |
 | **一键启动 Codex 客户端** | 在 OpenAI 页面启动本机 Codex 桌面客户端，方便完成配置后继续工作。 |
 | **单家 / 全部动画检测** | 向选定供应商发送同一个鹈鹕骑自行车 SVG 动画生成任务，在卡片中直接预览结果；支持批量检测。 |
+| **供应商自动检测** | 各供应商可独立开启自动检测，设置 1～1440 分钟间隔；检测结果显示完成时间与耗时。退出程序或轻量模式关闭界面后暂停。 |
 | **检测模型选择** | 手动输入模型 ID，或获取供应商返回的可用模型；批量检测可使用各自默认模型，也可统一指定模型。 |
 | **自定义结果展示时长** | 检测结果默认展示 1 分钟，可调整展示时长，也可手动返回数据图表。 |
 | **Codex 历史会话管理** | 预览本机历史对话、导出备份，并在客户端继续会话。支持本机 API 与账号登录模式的会话衔接。 |
@@ -103,7 +104,7 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 
 每个版本的新增功能、修复内容和平台范围，见 [Release 更新说明](https://github.com/mmcapi/mmcapi-releases/releases)。
 
-**平台发布说明约定**：每次发布注明版本号、已发布平台、CPU 架构及对应安装包；某个平台尚未发布时，明确标为“本次未发布”，并提供该平台上一可用版本入口。补齐平台后同步更新本页下载表和该版 Release 说明。
+**更新公告约定**：Release 正文与应用内更新公告使用同一份纯文本内容，默认不按 Windows/macOS 分章，仅平台专属功能或注意事项单独说明。正式 latest.json 同时包含 Windows 和 macOS；本页下载表按真实可用的版本、架构及包体维护。
 
 ## 关于会话同步与恢复
 
