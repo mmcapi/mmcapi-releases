@@ -14,21 +14,21 @@
 
 ## 平台与下载
 
-### 1.0.10 正式版（Latest）
+### 1.0.11 正式版（Latest，2026 年 9 月 16 日）
 
-当前最新稳定版为 **v1.0.10**，具体更新内容与使用注意事项请查看下方 Release 更新说明。
+优化 Codex 启动与重启流程，修复开启“保留官方登录”但本机未登录时仍可能要求官方登录的问题，并统一供应商切换、代理接管与配置恢复时的登录状态判断。重启 Codex 会中断正在执行的任务，请在任务完成后操作。
 
 **MMCAPI 提供 Windows 和 macOS 版本。** 当前版本的安装包如下：
 
 | 操作系统 | 适用设备 | 可用版本 | 安装包 |
 | --- | --- | --- | --- |
-| Windows | x64（Intel / AMD 64 位） | **v1.0.10 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.10/mmcapi-v1.0.10-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.10/mmcapi-v1.0.10-Windows.msi) |
-| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.10 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.10/mmcapi-v1.0.10-macOS.dmg) |
+| Windows | x64（Intel / AMD 64 位） | **v1.0.11 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.11/mmcapi-v1.0.11-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.11/mmcapi-v1.0.11-Windows.msi) |
+| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.11 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.11/mmcapi-v1.0.11-macOS.dmg) |
 | Windows | ARM64 | 本次未发布原生安装包 | — |
 
-**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.10。** Windows 安装包未做商业代码签名。
+**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.11。** Windows 安装包未做商业代码签名。
 
-[查看 1.0.10 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.10)。
+[查看 1.0.11 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.11)。
 
 平台版本可能分批准备。本表按实际可用包体维护；正式更新清单同时包含 Windows 和 macOS，下载时请以 [Release 附件](https://github.com/mmcapi/mmcapi-releases/releases) 为准。
 
