@@ -14,21 +14,21 @@
 
 ## 平台与下载
 
-### 1.0.11 正式版（Latest，2026 年 9 月 16 日）
+### 1.0.12 正式版（Latest，2026 年 9 月 30 日）
 
-优化 Codex 启动与重启流程，修复开启“保留官方登录”但本机未登录时仍可能要求官方登录的问题，并统一供应商切换、代理接管与配置恢复时的登录状态判断。重启 Codex 会中断正在执行的任务，请在任务完成后操作。
+整合首页常用操作并优化添加供应商面板；重新整理供应商检测流程、自动检测设置和窄窗口显示。修复官方账号卡片删除状态无法保留，以及 Codex 供应商切换写入失败后状态可能不一致的问题。检测会发送实际请求并可能产生费用，请按需启用。
 
 **MMCAPI 提供 Windows 和 macOS 版本。** 当前版本的安装包如下：
 
 | 操作系统 | 适用设备 | 可用版本 | 安装包 |
 | --- | --- | --- | --- |
-| Windows | x64（Intel / AMD 64 位） | **v1.0.11 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.11/mmcapi-v1.0.11-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.11/mmcapi-v1.0.11-Windows.msi) |
-| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.11 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.11/mmcapi-v1.0.11-macOS.dmg) |
+| Windows | x64（Intel / AMD 64 位） | **v1.0.12 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.12/mmcapi-v1.0.12-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.12/mmcapi-v1.0.12-Windows.msi) |
+| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.12 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.12/mmcapi-v1.0.12-macOS.dmg) |
 | Windows | ARM64 | 本次未发布原生安装包 | — |
 
-**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.11。** Windows 安装包未做商业代码签名。
+**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.12。** Windows 安装包未做商业代码签名。
 
-[查看 1.0.11 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.11)。
+[查看 1.0.12 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.12)。
 
 平台版本可能分批准备。本表按实际可用包体维护；正式更新清单同时包含 Windows 和 macOS，下载时请以 [Release 附件](https://github.com/mmcapi/mmcapi-releases/releases) 为准。
 
@@ -68,9 +68,9 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 | **使用数据总览** | 查看累计请求、缓存命中率和平均首字响应时间，了解当前统计范围内的使用情况。 |
 | **每家供应商独立图表** | 分别查看请求、缓存和响应时间趋势，观察不同供应商的实际表现。 |
 | **一键启动 Codex 客户端** | 在 OpenAI 页面启动本机 Codex 桌面客户端，方便完成配置后继续工作。 |
-| **单家 / 全部动画检测** | 向选定供应商发送同一个鹈鹕骑自行车 SVG 动画生成任务，在卡片中直接预览结果；支持批量检测。 |
-| **供应商自动检测** | 各供应商可独立开启自动检测，设置 1～1440 分钟间隔；检测结果显示完成时间与耗时。退出程序或轻量模式关闭界面后暂停。 |
-| **检测模型选择** | 手动输入模型 ID，或获取供应商返回的可用模型；批量检测可使用各自默认模型，也可统一指定模型。 |
+| **单家 / 批量动画检测** | 选择检测项目与模型后手动开始检测，在卡片中直接预览结果；批量检测入口位于顶部更多菜单。 |
+| **供应商自动检测** | 各供应商可独立设置检测间隔，并保存检测项目、模型和推理强度；确认后才会启用，关闭后停止后续定时请求。 |
+| **检测模型与高级选项** | 手动输入或刷新可用模型，并可在高级选项中设置推理强度和结果展示时长。 |
 | **自定义结果展示时长** | 检测结果默认展示 1 分钟，可调整展示时长，也可手动返回数据图表。 |
 | **Codex 历史会话管理** | 预览本机历史对话、导出备份，并在客户端继续会话。支持本机 API 与账号登录模式的会话衔接。 |
 | **会话删除保护与回收站** | 对成功备份的会话提供恢复入口，帮助找回误删内容。 |
