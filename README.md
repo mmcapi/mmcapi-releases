@@ -14,7 +14,7 @@
 
 ## 平台与下载
 
-### 1.0.12 正式版（Latest，2026 年 9 月 30 日）
+### 1.0.13 正式版（Latest，2026 年 10 月 2 日）
 
 整合首页常用操作并优化添加供应商面板；重新整理供应商检测流程、自动检测设置和窄窗口显示。修复官方账号卡片删除状态无法保留，以及 Codex 供应商切换写入失败后状态可能不一致的问题。检测会发送实际请求并可能产生费用，请按需启用。
 
@@ -22,13 +22,13 @@
 
 | 操作系统 | 适用设备 | 可用版本 | 安装包 |
 | --- | --- | --- | --- |
-| Windows | x64（Intel / AMD 64 位） | **v1.0.12 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.12/mmcapi-v1.0.12-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.12/mmcapi-v1.0.12-Windows.msi) |
-| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.12 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.12/mmcapi-v1.0.12-macOS.dmg) |
+| Windows | x64（Intel / AMD 64 位） | **v1.0.13 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.13/mmcapi-v1.0.13-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.13/mmcapi-v1.0.13-Windows.msi) |
+| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.13 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.13/mmcapi-v1.0.13-macOS.dmg) |
 | Windows | ARM64 | 本次未发布原生安装包 | — |
 
-**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.12。** Windows 安装包未做商业代码签名。
+**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.13。** Windows 安装包未做商业代码签名。
 
-[查看 1.0.12 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.12)。
+[查看 1.0.13 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.13)。
 
 平台版本可能分批准备。本表按实际可用包体维护；正式更新清单同时包含 Windows 和 macOS，下载时请以 [Release 附件](https://github.com/mmcapi/mmcapi-releases/releases) 为准。
 
