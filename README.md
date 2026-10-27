@@ -22,13 +22,13 @@
 
 | 操作系统 | 适用设备 | 可用版本 | 安装包 |
 | --- | --- | --- | --- |
-| Windows | x64（Intel / AMD 64 位） | **v1.0.13 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.13/mmcapi-v1.0.13-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.13/mmcapi-v1.0.13-Windows.msi) |
+| Windows | x64（Intel / AMD 64 位） | **v1.0.14 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.14/mmcapi-v1.0.14-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.14/mmcapi-v1.0.14-Windows.msi) |
 | macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.14 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.14/mmcapi-v1.0.14-macOS.dmg) |
 | Windows | ARM64 | 本次未发布原生安装包 | — |
 
-**macOS（Apple Silicon / Intel 通用版）已更新至 v1.0.14，Windows x64 当前提供 v1.0.13。** 上述 v1.0.14 新增功能请以对应版本为准。Windows 安装包未做商业代码签名。
+**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.14。** Windows 安装包未做商业代码签名。
 
-[查看 1.0.14 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.14) · [查看 Windows 1.0.13 更新说明](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.13)。
+[查看 1.0.14 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.14)。
 
 平台版本可能分批准备。本表按实际可用包体维护；正式更新清单同时包含 Windows 和 macOS，下载时请以 [Release 附件](https://github.com/mmcapi/mmcapi-releases/releases) 为准。
 
@@ -83,7 +83,7 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 
 ## 下载与安装
 
-按上方下载表选择对应平台的安装包，或进入对应版本的 Release 页面，展开 **Assets（附件）** 下载。macOS 当前为 v1.0.14，Windows x64 当前为 v1.0.13。
+按上方下载表选择对应平台的安装包，或进入对应版本的 Release 页面，展开 **Assets（附件）** 下载。Windows x64 和 macOS 当前均为 v1.0.14。
 
 - **Windows x64**：推荐下载以 `Windows-x64-setup.exe` 结尾的安装程序；需要 MSI 格式时，选择 `Windows.msi`。
 - **macOS（Apple Silicon / Intel）**：下载 `macOS.dmg`，打开后将 MMCAPI 拖入“应用程序”文件夹。上方下载表提供已发布版本的直接入口。
