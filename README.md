@@ -14,21 +14,21 @@
 
 ## 平台与下载
 
-### 1.0.13 正式版（Latest，2026 年 10 月 2 日）
+### 1.0.14 正式版（2026 年 10 月 27 日）
 
-整合首页常用操作并优化添加供应商面板；重新整理供应商检测流程、自动检测设置和窄窗口显示。修复官方账号卡片删除状态无法保留，以及 Codex 供应商切换写入失败后状态可能不一致的问题。检测会发送实际请求并可能产生费用，请按需启用。
+新增 Claude 桌面端一键配置与启动，可同步当前供应商的 API 和模型设置；支持将多个供应商聚合为统一的接入地址和 Key，并按模型、优先级选择可用来源。支持按需开启局域网共享，同时完善 DeepSeek 模型列表获取与上游接口诊断。
 
 **MMCAPI 提供 Windows 和 macOS 版本。** 当前版本的安装包如下：
 
 | 操作系统 | 适用设备 | 可用版本 | 安装包 |
 | --- | --- | --- | --- |
 | Windows | x64（Intel / AMD 64 位） | **v1.0.13 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.13/mmcapi-v1.0.13-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.13/mmcapi-v1.0.13-Windows.msi) |
-| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.13 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.13/mmcapi-v1.0.13-macOS.dmg) |
+| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.14 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.14/mmcapi-v1.0.14-macOS.dmg) |
 | Windows | ARM64 | 本次未发布原生安装包 | — |
 
-**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.13。** Windows 安装包未做商业代码签名。
+**macOS（Apple Silicon / Intel 通用版）已更新至 v1.0.14，Windows x64 当前提供 v1.0.13。** 上述 v1.0.14 新增功能请以对应版本为准。Windows 安装包未做商业代码签名。
 
-[查看 1.0.13 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.13)。
+[查看 1.0.14 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.14) · [查看 Windows 1.0.13 更新说明](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.13)。
 
 平台版本可能分批准备。本表按实际可用包体维护；正式更新清单同时包含 Windows 和 macOS，下载时请以 [Release 附件](https://github.com/mmcapi/mmcapi-releases/releases) 为准。
 
@@ -36,7 +36,7 @@
 
 MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理工具。无论你只有一个 API 供应商，还是需要在多个供应商之间切换，都可以在同一个界面管理配置、查看使用趋势，并通过实际生成任务观察模型的输出表现。
 
-应用提供 OpenAI / Codex、Anthropic / Claude 和 Google / Gemini 供应商管理入口。Codex 还提供客户端启动、历史会话管理和供应商动画检测功能。
+应用提供 OpenAI / Codex、Anthropic / Claude 和 Google / Gemini 供应商管理入口，支持配置并启动本机 Codex、Claude 桌面客户端。还可管理 Codex 历史会话、进行供应商动画检测，或将多个 API 供应商聚合为统一接入入口。
 
 ## 界面预览
 
@@ -68,6 +68,9 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 | **使用数据总览** | 查看累计请求、缓存命中率和平均首字响应时间，了解当前统计范围内的使用情况。 |
 | **每家供应商独立图表** | 分别查看请求、缓存和响应时间趋势，观察不同供应商的实际表现。 |
 | **一键启动 Codex 客户端** | 在 OpenAI 页面启动本机 Codex 桌面客户端，方便完成配置后继续工作。 |
+| **Claude 桌面端配置与启动** | 在 Anthropic 页面选择 API 供应商后，同步 API 和模型配置并打开 Claude；独立面板也支持一键打开。 |
+| **聚合 Key** | 将多个 API 供应商组合为统一的接入地址和 Key，按请求模型和供应商优先级选择来源，同一优先级内随机分配。 |
+| **按需共享到局域网** | 为聚合入口开启局域网共享，选择或刷新本机地址；共享默认关闭。 |
 | **单家 / 批量动画检测** | 选择检测项目与模型后手动开始检测，在卡片中直接预览结果；批量检测入口位于顶部更多菜单。 |
 | **供应商自动检测** | 各供应商可独立设置检测间隔，并保存检测项目、模型和推理强度；确认后才会启用，关闭后停止后续定时请求。 |
 | **检测模型与高级选项** | 手动输入或刷新可用模型，并可在高级选项中设置推理强度和结果展示时长。 |
@@ -80,7 +83,7 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 
 ## 下载与安装
 
-前往 **[最新版本下载页](https://github.com/mmcapi/mmcapi-releases/releases/latest)**，展开页面下方的 **Assets（附件）**，按你的操作系统选择安装包。
+按上方下载表选择对应平台的安装包，或进入对应版本的 Release 页面，展开 **Assets（附件）** 下载。macOS 当前为 v1.0.14，Windows x64 当前为 v1.0.13。
 
 - **Windows x64**：推荐下载以 `Windows-x64-setup.exe` 结尾的安装程序；需要 MSI 格式时，选择 `Windows.msi`。
 - **macOS（Apple Silicon / Intel）**：下载 `macOS.dmg`，打开后将 MMCAPI 拖入“应用程序”文件夹。上方下载表提供已发布版本的直接入口。
@@ -96,7 +99,9 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 4. **体验模型输出**：在 OpenAI 供应商卡片点击“检测”，或通过“全部检测”选择模型并批量生成动画。
 5. **管理历史对话**：在设置中的历史会话入口预览、备份和继续本机 Codex 会话。
 
-一键启动需要本机已安装 Codex 桌面客户端。供应商地址、密钥和可用模型由对应供应商提供；获取到的模型列表不保证每家供应商都支持同一个模型 ID。
+一键启动需要本机已安装对应的 Codex 或 Claude 桌面客户端。应用 Claude 配置时，已运行的 Claude 会重启，请先结束正在进行的任务；使用本地路由期间请保持 MMCAPI 运行。供应商地址、密钥和可用模型由对应供应商提供；获取到的模型列表不保证每家供应商都支持同一个模型 ID。
+
+聚合请求会消耗所选供应商的 API 额度，且不会自动替换模型。局域网共享仅适用于可信网络，开启后需要服务电脑与 MMCAPI 持续运行，请妥善保管接入 Key。
 
 ## 更新方式
 
