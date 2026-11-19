@@ -14,21 +14,21 @@
 
 ## 平台与下载
 
-### 1.0.15 正式版（2026 年 11 月 9 日）
+### 1.0.16 正式版（2026 年 11 月 19 日）
 
-首页升级为统一供应商工作区，同一连接可供多个客户端共用；支持同步、搜索和管理模型目录，并为所选客户端分别设置默认模型。聚合供应商可直接应用到客户端，按协议能力提供可用模型，并保护仍在使用的聚合连接。客户端启动与重启入口同步优化，Harness 的聚合配置独立保存，默认模型不会覆盖 Codex 的选择。
+供应商模型检测支持自定义文字题、图片题和图文题，题目可保存在本机并跨供应商复用。灵动岛可切换余额与模型检测，桌面模块支持歌词、本地日程和待办。从供应商名称旁的“查看详情”可查看该供应商的使用记录及单次请求的缓存命中情况。
 
 **MMCAPI 提供 Windows 和 macOS 版本。** 当前版本的安装包如下：
 
 | 操作系统 | 适用设备 | 可用版本 | 安装包 |
 | --- | --- | --- | --- |
-| Windows | x64（Intel / AMD 64 位） | **v1.0.15 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.15/mmcapi-v1.0.15-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.15/mmcapi-v1.0.15-Windows.msi) |
-| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.15 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.15/mmcapi-v1.0.15-macOS.dmg) |
+| Windows | x64（Intel / AMD 64 位） | **v1.0.16 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.16/mmcapi-v1.0.16-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.16/mmcapi-v1.0.16-Windows.msi) |
+| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.16 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.16/mmcapi-v1.0.16-macOS.dmg) |
 | Windows | ARM64 | 本次未发布原生安装包 | — |
 
-**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.15。** Windows 安装包未做商业代码签名。
+**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.16。** Windows 安装包未做商业代码签名。
 
-[查看 1.0.15 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.15)。
+[查看 1.0.16 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.16)。
 
 平台版本可能分批准备。本表按实际可用包体维护；正式更新清单同时包含 Windows 和 macOS，下载时请以 [Release 附件](https://github.com/mmcapi/mmcapi-releases/releases) 为准。
 
@@ -77,9 +77,11 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 | **聚合连接保护** | 客户端仍在使用聚合时，阻止移除最后一个成员或拆分全部成员，避免现有连接失效。 |
 | **按需共享到局域网** | 为聚合入口开启局域网共享，选择或刷新本机地址；共享默认关闭。 |
 | **单家 / 批量动画检测** | 选择检测项目与模型后手动开始检测，在卡片中直接预览结果；批量检测入口位于顶部更多菜单。 |
+| **自定义模型检测** | 使用自定义文字题、图片题或图文题对比模型表现，题目保存在本机，可供不同供应商复用。 |
 | **供应商自动检测** | 各供应商可独立设置检测间隔，并保存检测项目、模型和推理强度；确认后才会启用，关闭后停止后续定时请求。 |
 | **检测模型与高级选项** | 手动输入或刷新可用模型，并可在高级选项中设置推理强度和结果展示时长。 |
 | **自定义结果展示时长** | 检测结果默认展示 1 分钟，可调整展示时长，也可手动返回数据图表。 |
+| **灵动岛与桌面模块** | 切换查看余额与模型检测结果，并在桌面模块中查看歌词、管理本地日程和待办。 |
 | **Codex 历史会话管理** | 预览本机历史对话、导出备份，并在客户端继续会话。支持本机 API 与账号登录模式的会话衔接。 |
 | **会话删除保护与回收站** | 对成功备份的会话提供恢复入口，帮助找回误删内容。 |
 | **应用内反馈** | 点击主页或供应商页面的“反馈与建议”，扫码加入交流群。 |
@@ -88,7 +90,7 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 
 ## 下载与安装
 
-按上方下载表选择对应平台的安装包，或进入对应版本的 Release 页面，展开 **Assets（附件）** 下载。Windows x64 和 macOS 当前均为 v1.0.15。
+按上方下载表选择对应平台的安装包，或进入对应版本的 Release 页面，展开 **Assets（附件）** 下载。Windows x64 和 macOS 当前均为 v1.0.16。
 
 - **Windows x64**：推荐下载以 `Windows-x64-setup.exe` 结尾的安装程序；需要 MSI 格式时，选择 `Windows.msi`。
 - **macOS（Apple Silicon / Intel）**：下载 `macOS.dmg`，打开后将 MMCAPI 拖入“应用程序”文件夹。上方下载表提供已发布版本的直接入口。
