@@ -14,21 +14,23 @@
 
 ## 平台与下载
 
-### 1.0.16 正式版（2026 年 11 月 19 日）
+### 1.0.17 正式版（2026 年 11 月 24 日）
 
-供应商模型检测支持自定义文字题、图片题和图文题，题目可保存在本机并跨供应商复用。灵动岛可切换余额与模型检测，桌面模块支持歌词、本地日程和待办。从供应商名称旁的“查看详情”可查看该供应商的使用记录及单次请求的缓存命中情况。
+- **Antigravity** 支持在供应商设置中选择网关协议、指定模型并测试连接。Windows 用户可以切换个人账号和公司账号，也可以更新公司 Key。
+- **灵动岛** 支持吸附到屏幕四边或停在拖放位置，贴到左右边缘时竖排显示。本版修复了通知面板意外收起的问题，并改进了飞书、QQ 和 Claude 通知的处理。
+- **Claude Desktop** 通过混合网关使用 GPT 模型时，若原接口返回符合条件的 404，客户端代理会尝试 Responses 接口。
 
 **MMCAPI 提供 Windows 和 macOS 版本。** 当前版本的安装包如下：
 
 | 操作系统 | 适用设备 | 可用版本 | 安装包 |
 | --- | --- | --- | --- |
-| Windows | x64（Intel / AMD 64 位） | **v1.0.16 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.16/mmcapi-v1.0.16-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.16/mmcapi-v1.0.16-Windows.msi) |
-| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.16 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.16/mmcapi-v1.0.16-macOS.dmg) |
+| Windows | x64（Intel / AMD 64 位） | **v1.0.17 正式版** | [EXE 安装版（推荐）](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.17/mmcapi-v1.0.17-Windows-x64-setup.exe) · [MSI 安装版](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.17/mmcapi-v1.0.17-Windows.msi) |
+| macOS | Apple Silicon / Intel Mac（通用版） | **v1.0.17 正式版** | [DMG 安装包](https://github.com/mmcapi/mmcapi-releases/releases/download/v1.0.17/mmcapi-v1.0.17-macOS.dmg) |
 | Windows | ARM64 | 本次未发布原生安装包 | — |
 
-**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.16。** Windows 安装包未做商业代码签名。
+**Windows x64 和 macOS（Apple Silicon / Intel 通用版）均已更新至 v1.0.17。** Windows 安装包未做商业代码签名。
 
-[查看 1.0.16 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.16)。
+[查看 1.0.17 更新说明与使用注意事项](https://github.com/mmcapi/mmcapi-releases/releases/tag/v1.0.17)。
 
 平台版本可能分批准备。本表按实际可用包体维护；正式更新清单同时包含 Windows 和 macOS，下载时请以 [Release 附件](https://github.com/mmcapi/mmcapi-releases/releases) 为准。
 
@@ -90,7 +92,7 @@ MMCAPI（原 mmc-switch）是一款面向 AI 编程工具用户的桌面管理�
 
 ## 下载与安装
 
-按上方下载表选择对应平台的安装包，或进入对应版本的 Release 页面，展开 **Assets（附件）** 下载。Windows x64 和 macOS 当前均为 v1.0.16。
+按上方下载表选择对应平台的安装包，或进入对应版本的 Release 页面，展开 **Assets（附件）** 下载。Windows x64 和 macOS 当前均为 v1.0.17。
 
 - **Windows x64**：推荐下载以 `Windows-x64-setup.exe` 结尾的安装程序；需要 MSI 格式时，选择 `Windows.msi`。
 - **macOS（Apple Silicon / Intel）**：下载 `macOS.dmg`，打开后将 MMCAPI 拖入“应用程序”文件夹。上方下载表提供已发布版本的直接入口。
